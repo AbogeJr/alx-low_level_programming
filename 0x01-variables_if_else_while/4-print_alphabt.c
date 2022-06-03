@@ -5,9 +5,7 @@
  */
 int main(void)
 {
-	char c = 'a';
-
-	for (c; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		if (c == 'e' || c == 'q')
 		{
