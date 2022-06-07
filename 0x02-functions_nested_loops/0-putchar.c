@@ -1,4 +1,4 @@
-0;276;0c#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - prints putchar and a newline
