@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c#include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - prints first 50 numbers of the fibonacci series
@@ -17,7 +17,7 @@ int main(void)
 		j = k + l;
 		k = l;
 		l = j;
-		printf("%d", j);
+		printf("%d, ", j);
 	}
 
 	return (0);
