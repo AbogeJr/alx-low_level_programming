@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints all digits from any number to 98
- * @n - starting point of printing
+ * @n: starting point of printing
  */
 
 void print_to_98(int n)
