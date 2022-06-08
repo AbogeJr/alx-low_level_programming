@@ -12,13 +12,18 @@ int main(void)
 
 	printf("%ld, ", k);
 	printf("%ld, ", l);
-	for (i = 0; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		j = k + l;
 		k = l;
 		l = j;
-		printf("%ld, ", j);
+		printf("%ld", j);
+		if (i != 49)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
+	putchar('\n');
 	return (0);
 }
