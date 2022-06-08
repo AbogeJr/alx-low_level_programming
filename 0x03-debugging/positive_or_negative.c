@@ -4,13 +4,11 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main- checks whether random number is positive, zero or negative
- * Return: 0 if successful
+ * positive_or_negative - checks whether random number is positive, 
+ * zero or negative
  */
-int main(void)
+void positive_or_negative(int n)
 {
-	int n;
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
@@ -26,5 +24,4 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return (0);
 }
