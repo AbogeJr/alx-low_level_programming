@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - prints sum of even numbers of the fibonacci series below 4,000,000
+ * Return: Always 0
+ */
+
+int main(void)
+{
+	long int i, j, sum = 0, k = 1, l = 2;
+
+	printf("%ld, ", k);
+	printf("%ld, ", l);
+	for (i = 2; j < 4000000; i++)
+	{
+		j = k + l;
+		k = l;
+		l = j;
+		printf("%ld", j);
+		if (i != 49)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
+}
