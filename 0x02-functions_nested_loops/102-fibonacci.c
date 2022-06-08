@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	int i, j, k = 1, l = 2;
+	long int i, j, k = 1, l = 2;
 
-	printf("%d, ", k);
-	printf("%d, ", l);
+	printf("%ld, ", k);
+	printf("%ld, ", l);
 	for (i = 0; i < 50; i++)
 	{
 		j = k + l;
 		k = l;
 		l = j;
-		printf("%d, ", j);
+		printf("%ld, ", j);
 	}
 
 	return (0);
