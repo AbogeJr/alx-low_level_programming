@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string in reverse to std out
+ * _print_rev - prints a string in reverse to std out
  * @s: pointer to base index of the string
  */
 
