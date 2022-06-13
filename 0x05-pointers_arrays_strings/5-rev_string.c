@@ -1,24 +1,35 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse to std out
+ * rev_string -reverses a string
  * @s: pointer to base index of the string
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i, j, len = 0;
+	int i, j, count = 0;
+	char *start, *end, tmp;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[count] != '\0')
 	{
-		len += 1;
+		count++;
 	}
 
-	for (j = len; j >= 0; j--)
+	end = s;
+	start = s;
+
+	for (i = 0; i < count; i++)
 	{
-		_putchar(s[j]);
+		end++;
 	}
 
-	_putchar('\n');
+	for (j = 0; j < count / 2; j++)
+	{
+		tmp = *end;
+		*end = *start;
+		*start = tmp;
 
+		start++;
+		end--;
+	}
 }
