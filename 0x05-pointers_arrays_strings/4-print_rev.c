@@ -7,10 +7,14 @@
 
 void print_rev(char *s)
 {
-	int i;
-	int len = sizeof(s) / sizeof(char);
+	int i, sum = 0;
 
-	for (i = len - 1; i >= 0; i--)
+	for (i = 0; *s != '\0'; i++)
+	{
+		sum++;
+	}
+
+	for (i = sum; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
