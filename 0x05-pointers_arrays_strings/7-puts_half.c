@@ -16,12 +16,27 @@ void puts_half(char *str)
 		ptr++;
 	}
 
-	n = count % 2 == 0 ? count / 2 : (count - 1) / 2;
-
-	for (i = n; i < count; i++)
+/*	n = count % 2 == 0 ? (count / 2) : ((count - 1) / 2);
+ */
+	if (count % 2 == 0)
 	{
-		_putchar(str[i]);
+		n = count / 2;
+
+		for (i = n; i < count; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
+	else
+	{
+		n = (count - 1) / 2;
+
+		for (i = n; i < count; i ++)
+		{
+			_putchar(str[i + 1]);
+		}
+	}
+
 
 	_putchar('\n');
 }
