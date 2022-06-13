@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c
+
 /**
  * puts_half - prints 2nd half of a string
  * @str: string to be processed
