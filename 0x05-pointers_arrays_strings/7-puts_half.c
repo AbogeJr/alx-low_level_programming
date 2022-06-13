@@ -1,5 +1,5 @@
 #include "main.h"
-
+0;276;0c
 /**
  * puts_half - prints 2nd half of a string
  * @str: string to be processed
@@ -16,8 +16,6 @@ void puts_half(char *str)
 		ptr++;
 	}
 
-/*	n = count % 2 == 0 ? (count / 2) : ((count - 1) / 2);
- */
 	if (count % 2 == 0)
 	{
 		n = count / 2;
@@ -31,7 +29,7 @@ void puts_half(char *str)
 	{
 		n = (count - 1) / 2;
 
-		for (i = n; i < count; i ++)
+		for (i = n; i < count; i++)
 		{
 			_putchar(str[i + 1]);
 		}
