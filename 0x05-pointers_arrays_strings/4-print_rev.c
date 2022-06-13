@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * _print_rev - prints a string in reverse to std out
+ * print_rev - prints a string in reverse to std out
  * @s: pointer to base index of the string
  */
 
 void print_rev(char *s)
 {
-	int i, sum = 0;
+	int i, j, len = 0;
 
-	for (i = 0; *s != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		sum++;
+		len += 1;
 	}
 
-	for (i = sum; i >= 0; i--)
+	for (j = len; j >= 0; j--)
 	{
-		_putchar(s[i]);
+		_putchar(s[j]);
 	}
 
 	_putchar('\n');
