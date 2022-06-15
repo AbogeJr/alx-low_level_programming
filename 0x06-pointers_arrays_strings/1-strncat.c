@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * _strcat - appends a string to another string
+ * _strncat - appends a string to another string upto n bytes
  * @dest: string to be appended to
  * @src: string to be appended
+ * @n: number of bytes to append
  *
  * Return: appended string
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, len = 0;
 
@@ -19,12 +20,18 @@ char *_strcat(char *dest, char *src)
 
 	while (src[i] != '\0')
 	{
+		if (i >= n)
+			break;
+
 		dest[len] = src[i];
 		len++;
 		i++;
 	}
 
-	dest[len] = '\0';
+	if (i >= n)
+	{
+		dest[len] = '\0';
+	}
 
 	return (dest);
 }
