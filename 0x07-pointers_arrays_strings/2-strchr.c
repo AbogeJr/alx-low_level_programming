@@ -1,5 +1,5 @@
 #include "main.h"
-
+0;276;0c
 /**
  * _strchr - locates a character in a string
  * @s: pointer to string
@@ -20,9 +20,6 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	ptr = (s + i);
 
-	if (ptr)
-		return (ptr);
-	return ('\0');
+	return (s + i);
 }
