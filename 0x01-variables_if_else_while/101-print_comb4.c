@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints unique number combinations between 00 and 100
+ * main - prints all unique three-number combinations
  * Return: 0 for sucess
  */
 
