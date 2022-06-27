@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+0;276;0c#include "main.h"
 
 /**
  * *create_array - creates an array of chars,
@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 		{
 			ptr[i] = c;
 		}
-
-		return (ptr);
 	}
+
+	return (ptr)
 }
