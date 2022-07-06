@@ -1,7 +1,7 @@
 /**
  * op_add - adds two integers
  * @a: first int
- * @b - second int
+ * @b: second int
  *
  * Return: sum of a and b
  */
