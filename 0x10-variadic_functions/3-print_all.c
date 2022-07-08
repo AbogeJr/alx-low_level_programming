@@ -44,9 +44,7 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 		if (i != num && flag != 1)
-		{
 			printf(", ");
-		}
 	}
 
 	va_end(ap);
