@@ -9,6 +9,11 @@ void print_binary(unsigned long int n)
 	int i, count = 0;
 	unsigned long int current;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 	for (i = 31; i >= 0; i--)
 	{
 		current = n >> i;
